@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<style>
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.outer{
+    padding: 60px;
+    
+}
+.header,.tech,.emp,.web,.edu,.co,.pers,.add,.end{
+    background-color: white;
+            border: 1px solid lightgrey;
+            padding: 20px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: small;
+  
+
+}
+.header, .add {
+    background-color: #f7f9f9;
+}
+
+.tech {
+    background-color: #f0f4f7; 
+}
+
+.emp, .web {
+    background-color: #fcfcfc; 
+}
+
+.co, .edu, .end {
+    background-color: #f9f9f9; 
+}
+
+.pers {
+    background-color: #f5f5f5; 
+}
+
+.container{
+    padding-left: 100px;
+    padding-right: 100px;
+    height: 100vh;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 2fr 2fr 2fr;
+   
+}
+.header{
+    grid-area: 1/2/1/4;
+    
+}
+.emp{
+    grid-area: 2/2/3/4;
+}
+
+.web{
+    grid-area: 3/2/3/4;
+}
+
+.pers{
+    grid-area: 4/2/4/4;
+}
+
+.tech{
+    grid-area: 2/1/4/2;
+}
+
+.end{
+    grid-area: 5/1/5/4;
+}
+
+
+@media (max-width: 1200px) {
+    .container {
+        padding-left: 2%;
+        padding-right: 2%;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto; 
+    }
+
+    .header, .emp, .web, .pers, .tech, .end {
+        grid-column: span 1; 
+    }
+}
+
+
+@media (max-width: 800px) {
+    .container {
+        padding-left: 2%;
+        padding-right: 2%;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto; 
+    }
+
+    .header, .emp, .web, .pers, .tech, .end {
+        grid-column: span 1;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .container {
+        padding-left: 1%;
+        padding-right: 1%;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto; /
+    }
+    
+    .header, .emp, .web, .pers, .tech, .end {
+        font-size: smaller;
+        grid-column: span 1; 
+    }
+}
+</style>
+
+
+
+</head>
+<body>
+<div class="outer">
+
+<div class="container">
+
+<div class="header">
+    <h1>Praveen B</h1>
+    <p>Objective:
+        Aspire to grow as a professional and in process want to learn innovative skills by working as a creative individual on challenging projects to give my career a strong base through a growth-oriented and esteemed organization.
+        </p>
+</div>
+
+
+<div class="add"> 
+    <h3>Address</h3>
+   <p> No 13, 3rd Street, 5th Cross
+VG Raonagar, 'C' Sector
+Vellore
+Mobile: 8428568672
+<strong>Email: praveen2272000@gmail.com </strong>
+<h3>Git:</h3><a href="https://github.com/Praveenzoro?tab=repositories">https://github.com/Praveenzoro?tab=repositories</a>
+</p>
+ </div>
+
+
+<div class="emp">
+    <h3>Employment History</h3>
+
+    <ul>
+      <li>
+        <strong>Associate Software Engineer</strong> at BNP Paribas Securities
+        <br>Full-time, February 2022 to Present
+        <ul>
+          <li><strong>Reporting Module:</strong> Identifying and solving issues and errors in reports (factsheets) by debugging SQL stored procedures logs and analyzing API calls.</li>
+          <li>Different production groups use SQL for data accumulation for certain reports, while others use API calls.</li>
+          <li>Debugged different types of stored procedures to find issues and provided solutions.</li>
+          <li>Maintenance of the VAR (Value at Risk) application, utilized for risk calculation, risk reporting, and analyzing previous fund performances.</li>
+          <li>Monitoring the main flow of applications receiving positions data of certain clients, used by the operations team for risk calculations.</li>
+          <li>Maintenance of services (Tomcat) of the web application.</li>
+          <li>Using PuTTY for manually loading files into the web application and maintaining flow services in PuTTY.</li>
+          <li>Development of SQL scripts for operations team workarounds, for loading bulk data into the production environment. DML scripts for manipulating data in the production server. </li>
+        <li>Analysis of stored procedures for the VAR application to understand the flow and process of certain data changes. </li>
+           
+        </ul>
+      </li>
+    </ul>
+</div>
+
+
+<div class="tech">
+    <div>
+        <h3>Technical Summary</h3>
+    
+        <div><strong>Frontend Technologies:</strong></div>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>Adobe Photoshop CS6</li>
+        </ul>
+    
+        <div><strong>Backend Technologies:</strong></div>
+        <ul>
+            <li>Node.js</li>
+            <li>Express.js</li>
+            <li>EJS (Embedded JavaScript)</li>
+            <li>SQL</li>
+            <li>REST APIs</li>
+        </ul>
+    
+        <div><strong>Version Control:</strong></div>
+        <ul>
+            <li>Git</li>
+        </ul>
+    
+        <div><strong>Software:</strong></div>
+        <ul>
+            <li>Microsoft Word</li>
+            <li>Microsoft Excel</li>
+            <li>Microsoft PowerPoint</li>
+        </ul>
+    
+        <div><strong>Operating Systems:</strong></div>
+        <ul>
+            <li>Windows</li>
+            <li>Android</li>
+        </ul>
+        <h3>Hobbies:</h3>
+        <ul>
+            <li>Travelling</li>
+            <li>Photo editing</li>
+            <li>Listening to Music</li>
+            <li>Playing Games</li>
+        </ul>
+        <h3>Co-curricular Activities:</h3>
+        <ul>
+            <li>Completed BA-Hindi in 2014 by completing 8 exams</li>
+            <li>Attended workshops in BSC– ‘Place It’, ‘Data mining’</li>
+            <li>Sports: Football Zonals 2015, 2016</li>
+            <li>Proficient in Photo Editing (Photoshop editing)</li>
+            <li>Skilled in Drawing</li>
+        </ul>
+    </div>
+</div>
+
+
+<div class="edu">
+    <div>
+    
+        <h3>Languages Known:</h3>
+        <ul>
+            <li>English</li>
+            <li>Tamil</li>
+        
+        </ul>
+    
+        <h3>Personal Details:</h3>
+        <ul>
+            <li>Name: Praveen B</li>
+            <li>Father's Name: C Bharathi</li>
+            <li>Mother's Name: B Maryjanet</li>
+            <li>DOB: 22.07.2000</li>
+            <li>Sex: Male</li>
+            <li>Address: No 13, 3rd Street, 5th Cross VG Raonagar, 'C' Sector, Vellore – 632007</li>
+        </ul>
+    </div>
+    
+</div>
+
+
+<div class="web">
+    <h3>Web development:</h3>
+    <h3>1. Drumkit</h3>
+    <p>JavaScript function with switch case to play sounds whenever WASDJKL keywords are pressed or clicked. Used document object model (DOM) to handle frontend effects. Built using HTML, CSS, JS & DOM.</p>
+
+    <h3>2. SimonGame</h3>
+    <p>Memory power testing game. Used functions and arrays to store and evaluate user-clicked patterns and randomly generated patterns to check and move to a new sequence. Simultaneously, these functions handle frontend sounds and blinks using jQuery. Built using HTML, CSS, JS & jQuery.</p>
+
+    <h3>3. BlogPost</h3>
+    <p>Blog website that allows creating, editing, and deleting posts by using middleware, handling HTTP routes, and EJS.</p>
+
+    <h3>4. SecretsAPI</h3>
+    <p>Loads random human secrets from a public API. Uses Axios to fetch secrets. Built using HTML, CSS, JS & DOM.</p>
+
+    <h3>5. BlogPost-API</h3>
+    <p>The source code includes two servers: one for the API and another for the blog post. The `index.js` file contains a posts array in JSON which handles GET (existing posts), POST (new posts), PATCH (update posts), and DELETE (remove posts) by acquiring input data using middleware and manipulating the JSON array according to the input. `server.js` is used to send and receive responses from the server API to display, add, edit, and delete posts. Requires hosting two servers simultaneously on different ports. Built using Node.js, Express, EJS, and REST-API.</p>
+</div>
+
+<div class="pers">
+    <h3>Educational Qualifications</h3>
+
+<table border="1" cellpadding="8" cellspacing="0">
+  <thead>
+    <tr>
+      <th>Year</th>
+      <th>Courses</th>
+      <th>Institution</th>
+      <th>Specialization</th>
+      <th>%/CGPA</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>2020-2022</td>
+      <td>MCA - Masters in Computer Applications</td>
+      <td>VIT-University Vellore</td>
+      <td>Computer Science</td>
+      <td>8.40</td>
+    </tr>
+    <tr>
+      <td>2017-2020</td>
+      <td>BSc - Bachelors in Computer Science</td>
+      <td>VIT-University Vellore</td>
+      <td>Computer Science</td>
+      <td>7.60</td>
+    </tr>
+    <tr>
+      <td>2017</td>
+      <td>12th Grade</td>
+      <td>Trinity Matriculation Hr. Sec. School</td>
+      <td>Computer Science & Maths</td>
+      <td>71.1%</td>
+    </tr>
+    <tr>
+      <td>2015</td>
+      <td>10th Grade</td>
+      <td>Vani Vidyalaya Matriculation Hr. Sec. School</td>
+      <td></td>
+      <td>81.8%</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<div class="end">
+    I hereby declare that the above details furnished are true to the best of my knowledge and belief.
+
+    
+</div>
+
+
+</div>
+     
+
+    </div>
+
+</div>
+</body>
+</html>
