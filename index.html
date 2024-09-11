@@ -194,7 +194,21 @@ flex-direction: column;
  text-align: center;
  padding-top: 10px;
 }
+.c1new{
+  background-image: url("notemaker.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.icon {
 
+transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.icon:hover {
+transform: scale(1.2) rotate(10deg);
+
+}
 @media all and (max-width: 768px) {
   .container{
     flex-wrap: wrap;
@@ -210,6 +224,12 @@ flex-direction: column;
     font-size: 8px;
     padding: 5px;
   }
+
+  .c1new{
+
+  background-size: cover;
+}
+
 }
 
 </style>
@@ -223,10 +243,10 @@ flex-direction: column;
  
  <div class="Nav">
    <a href="./Resume.html" class="button">Resume</a>
-   <a href="https://www.facebook.com/maryjanet.b.3?mibextid=ZbWKwL"><img src="./facebook.JPG" alt="Facebook"> </a>   
-   <a href="https://www.instagram.com/gh0st.jx/?igsh=MTcycWNleWlndjAxOA%3D%3D"><img src="./Insta.JPG" alt="Instagram"></a>
-   <a href="https://www.linkedin.com/in/praveen-b-94067b183/"><img src="./Linkdin.JPG" alt="LinkedIn"></a>
-   <a href="https://github.com/Praveenzoro"><img src="./gitfin.jpg" alt="GitHub"></a>
+   <a href="https://www.facebook.com/maryjanet.b.3?mibextid=ZbWKwL"><img class="icon" src="./facebook.JPG" alt="Facebook"> </a>   
+   <a href="https://www.instagram.com/gh0st.jx/?igsh=MTcycWNleWlndjAxOA%3D%3D"><img class="icon" src="./Insta.JPG" alt="Instagram"></a>
+   <a href="https://www.linkedin.com/in/praveen-b-94067b183/"><img src="./Linkdin.JPG" class="icon" alt="LinkedIn"></a>
+   <a href="https://github.com/Praveenzoro"><img class="icon" src="./gitfin.jpg" alt="GitHub"></a>
  </div>
  
  <section class="container">
@@ -240,7 +260,17 @@ flex-direction: column;
      <div class="gitlink"><a href="https://praveenzoro.github.io/Simongame/">Play</a></div>
     </div>
    </div>
- 
+   <div class="cardf">
+    <div class="card-img c1new"></div>
+    <h2>Personal note</h2>
+    <p>This project is an simple frontend quicknote built using React Js and its props for communication between components,hooks and useState to handle state, conditional rendering and functions.</p>
+    <div class="icons">React JS - HTML - CSS - JavaScript</div>
+    <div class="simon">
+    <div class="gitlink"><a href="https://praveenzoro.github.io/Personalnote/">Visit</a></div>
+    <div class="gitlink"><a href="https://github.com/Praveenzoro/Personalnote">GitHub</a></div>
+  </div>
+  </div> 
+
    <div class="cardf">
      <div class="card-img c2"></div>
      <h2>SecretsAPI</h2>
@@ -248,14 +278,16 @@ flex-direction: column;
      <div class="icons">Node.js - Express.js - EJS</div>
      <div class="gitlink"><a href="https://github.com/Praveenzoro/SecretsAPI.git">GitHub</a></div>
    </div>
- 
+  
    <div class="cardf">
-     <div class="card-img c3"></div>
-     <h2>Drumkit</h2>
-     <p>This module taught me how to use Flexbox and JavaScript functions with a switch case to play sounds whenever WASDJKL keys are pressed or clicked. It also utilizes the Document Object Model (DOM) to manage frontend effects.</p>
-     <div class="icons">HTML - CSS - JS - DOM</div>
-     <div class="gitlink"><a href="https://github.com/Praveenzoro/Drumkit.git">GitHub</a></div>
-   </div>
+    <div class="card-img c5"></div>
+    <h2>Blog-API</h2>
+    <p>This project includes two servers: one for the API and another for the blog posts. The `index.js` file contains a JSON array of posts that handles GET (existing posts), POST (new posts), PATCH (update posts), and DELETE (remove posts) operations. The `server.js` file is used to send and receive responses from the server API to display, add, edit, and delete posts. This requires hosting two servers simultaneously on different ports and is built using Node.js, Express, EJS, and REST-API.</p>
+    <div class="icons">Node.js - Express.js - EJS - REST-API</div>
+    <div class="gitlink"><a href="https://github.com/Praveenzoro/BLOG-API.git">GitHub</a></div>
+  </div>
+
+
  </section>
  
  <section class="container">
@@ -266,15 +298,7 @@ flex-direction: column;
      <div class="icons">Node.js - Express.js - EJS - DOM</div>
      <div class="gitlink"><a href="https://github.com/Praveenzoro/BLOGPOST-NO-API.git">GitHub</a></div>
    </div>
- 
-   <div class="cardf">
-     <div class="card-img c5"></div>
-     <h2>Blog-API</h2>
-     <p>This project includes two servers: one for the API and another for the blog posts. The `index.js` file contains a JSON array of posts that handles GET (existing posts), POST (new posts), PATCH (update posts), and DELETE (remove posts) operations. The `server.js` file is used to send and receive responses from the server API to display, add, edit, and delete posts. This requires hosting two servers simultaneously on different ports and is built using Node.js, Express, EJS, and REST-API.</p>
-     <div class="icons">Node.js - Express.js - EJS - REST-API</div>
-     <div class="gitlink"><a href="https://github.com/Praveenzoro/BLOG-API.git">GitHub</a></div>
-   </div>
- 
+
    <div class="cardf">
      <div class="card-img c6"></div>
      <h2>CapitalQuiz</h2>
@@ -282,6 +306,14 @@ flex-direction: column;
      <div class="icons">Node.js - Express.js - EJS - REST-API</div>
      <div class="gitlink"><a href="https://github.com/Praveenzoro/CapitalQuiz.git">GitHub</a></div>
    </div>
+
+   <div class="cardf">
+    <div class="card-img c3"></div>
+    <h2>Drumkit</h2>
+    <p>This module taught me how to use Flexbox and JavaScript functions with a switch case to play sounds whenever WASDJKL keys are pressed or clicked. It also utilizes the Document Object Model (DOM) to manage frontend effects.</p>
+    <div class="icons">HTML - CSS - JS - DOM</div>
+    <div class="gitlink"><a href="https://github.com/Praveenzoro/Drumkit.git">GitHub</a></div>
+  </div>
  </section>
 
  <footer>
