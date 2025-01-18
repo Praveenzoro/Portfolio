@@ -26,7 +26,7 @@
   font-weight: 400;
   font-style: normal;
   font-size: small;
-  
+
 
 }
 .header, .add {
@@ -65,6 +65,10 @@
 }
 .emp{
     grid-area: 2/2/3/4;
+    
+}
+.emp >ul,ul{
+    list-style: none;
 }
 
 .web{
@@ -77,54 +81,59 @@
 
 .tech{
     grid-area: 2/1/4/2;
+  
 }
-
+.tecdet{
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+.nemc{
+ margin-top: 10px;
+}
+.nemc >li{
+    margin-bottom: 5px;
+}
 .end{
     grid-area: 5/1/5/4;
 }
 
 
-@media (max-width: 1200px) {
+
+
+@media (max-width: 1100px) {
     .container {
         padding-left: 2%;
         padding-right: 2%;
-        grid-template-columns: 1fr;
-        grid-template-rows: auto; 
-    }
-
-    .header, .emp, .web, .pers, .tech, .end {
-        grid-column: span 1; 
-    }
-}
-
-
-@media (max-width: 800px) {
-    .container {
-        padding-left: 2%;
-        padding-right: 2%;
-        grid-template-columns: 1fr;
-        grid-template-rows: auto; 
+       display: flex;
+       flex-direction: column;
     }
 
     .header, .emp, .web, .pers, .tech, .end {
         grid-column: span 1;
     }
+    .tech{
+         height: fit-content;
+    }
+    .emp{
+        height: fit-content;
+    }
+    .edu{
+        grid-area: 3/2/3/5;
+       
+    }
+
+    .tech{
+        grid-area: 2/2/3/3;
+    }
+ .vba{
+    font-size: 10px;
+ }
+   .bba{
+    font-size: 10px;
+   }
 }
 
 
-@media (max-width: 480px) {
-    .container {
-        padding-left: 1%;
-        padding-right: 1%;
-        grid-template-columns: 1fr;
-        grid-template-rows: auto; /
-    }
-    
-    .header, .emp, .web, .pers, .tech, .end {
-        font-size: smaller;
-        grid-column: span 1; 
-    }
-}
 </style>
 
 
@@ -163,17 +172,23 @@ Mobile: 8428568672
         <strong>Associate Software Engineer</strong> at BNP Paribas Securities
         <br>Full-time, February 2022 to Present
         <ul>
-          <li><strong>Reporting Module:</strong> Identifying and solving issues and errors in reports (factsheets) by debugging SQL stored procedures logs and analyzing API calls.</li>
-          <li>Different production groups use SQL for data accumulation for certain reports, while others use API calls.</li>
-          <li>Debugged different types of stored procedures to find issues and provided solutions.</li>
-          <li>Maintenance of the VAR (Value at Risk) application, utilized for risk calculation, risk reporting, and analyzing previous fund performances.</li>
-          <li>Monitoring the main flow of applications receiving positions data of certain clients, used by the operations team for risk calculations.</li>
-          <li>Maintenance of services (Tomcat) of the web application.</li>
-          <li>Using PuTTY for manually loading files into the web application and maintaining flow services in PuTTY.</li>
-          <li>Development of SQL scripts for operations team workarounds, for loading bulk data into the production environment. DML scripts for manipulating data in the production server. </li>
-        <li>Analysis of stored procedures for the VAR application to understand the flow and process of certain data changes. </li>
-           
+            <li>
+                <strong>Frontend Development:</strong> Completed a 7-month internship focusing on HTML5, CSS3, JavaScript, React.js, and Express.js, designing and developing responsive web applications to enhance user experience through interactive elements.
+            </li>
+            <li>
+                <strong>User Interface Enhancement:</strong> Enhanced user interfaces by implementing JavaScript functionality, improving interactivity and overall user experience in internal web applications.
+            </li>
+            <li>
+                <strong>Collaborative UI Design:</strong> Worked collaboratively in designing and developing the user interface for banking web applications, ensuring compliance with accessibility standards and delivering an intuitive user experience.
+            </li>
+            <li>
+                <strong>Debugging Reports:</strong> Debugged and resolved issues in reports (factsheets) by analyzing PL/SQL stored procedures, logs, and API calls, handling complex calculations of fund vs. benchmark, breakdown reporting, and attribution reporting to assist APS teams.
+            </li>
+            <li>
+                <strong>Backend Development Training:</strong> Completed internal courses in backend web development covering Node.js for server-side JavaScript execution, Express.js for building robust web applications and APIs, EJS for templating and rendering dynamic HTML, REST APIs for client-server communication, Axios for efficient API communication, and pgAdmin for managing and administering PostgreSQL databases.
+            </li>
         </ul>
+        
       </li>
     </ul>
 </div>
@@ -183,55 +198,65 @@ Mobile: 8428568672
     <div>
         <h3>Technical Summary</h3>
     
-        <div><strong>Frontend Technologies:</strong></div>
-        <ul>
+        <div class="tecdet"><strong>Frontend Technologies:</strong>
+        <ul class="nemc">
             <li>HTML</li>
             <li>CSS</li>
             <li>JavaScript</li>
+            <li>React Js</li>
             <li>Adobe Photoshop CS6</li>
         </ul>
-    
-        <div><strong>Backend Technologies:</strong></div>
-        <ul>
+    </div>
+        <div class="tecdet"><strong>Backend Technologies:</strong>
+        <ul class="nemc">
             <li>Node.js</li>
             <li>Express.js</li>
             <li>EJS (Embedded JavaScript)</li>
             <li>SQL</li>
             <li>REST APIs</li>
         </ul>
-    
-        <div><strong>Version Control:</strong></div>
-        <ul>
+    </div>
+        <div class="tecdet"><strong>Version Control:</strong>
+        <ul class="nemc">
             <li>Git</li>
         </ul>
-    
-        <div><strong>Software:</strong></div>
-        <ul>
-            <li>Microsoft Word</li>
-            <li>Microsoft Excel</li>
-            <li>Microsoft PowerPoint</li>
+    </div>
+        <div class="tecdet" ><strong>Software:</strong>
+        <ul class="nemc">
+            <li>Visual studio code</li>
+            <li>Adobe photoshop 2016</li>
+            <li>Putty</li>
+            <li>Postman</li>
         </ul>
-    
-        <div><strong>Operating Systems:</strong></div>
-        <ul>
+    </div>
+        <div class="tecdet"><strong>Operating Systems:</strong>
+        <ul class="nemc">
             <li>Windows</li>
             <li>Android</li>
         </ul>
+    </div>
+        <div class="tecdet">
+            <h3>Co-curricular Activities:</h3>
+                <ul class="nemc">
+                    <li>Completed BA-Hindi in 2014 by completing 8 exams</li>
+                    <li>Attended workshops in BSC– ‘Place It’, ‘Data mining’</li>
+                    <li>Sports: Football Zonals 2015, 2016</li>
+                    <li>Proficient in Photo Editing (Adobe Photoshop)</li>
+                    <li>Skilled in Drawing</li>
+        
+                </ul>
+            </div>
+        <div  class="tecdet"> 
         <h3>Hobbies:</h3>
-        <ul>
+        <ul class="nemc">
             <li>Travelling</li>
             <li>Photo editing</li>
             <li>Listening to Music</li>
             <li>Playing Games</li>
+            <li>Watching Anime</li>
         </ul>
-        <h3>Co-curricular Activities:</h3>
-        <ul>
-            <li>Completed BA-Hindi in 2014 by completing 8 exams</li>
-            <li>Attended workshops in BSC– ‘Place It’, ‘Data mining’</li>
-            <li>Sports: Football Zonals 2015, 2016</li>
-            <li>Proficient in Photo Editing (Photoshop editing)</li>
-            <li>Skilled in Drawing</li>
-        </ul>
+    </div>
+     
     </div>
 </div>
 
@@ -262,27 +287,31 @@ Mobile: 8428568672
 
 <div class="web">
     <h3>Web development:</h3>
-    <h3>1. Drumkit</h3>
-    <p>JavaScript function with switch case to play sounds whenever WASDJKL keywords are pressed or clicked. Used document object model (DOM) to handle frontend effects. Built using HTML, CSS, JS & DOM.</p>
-
-    <h3>2. SimonGame</h3>
-    <p>Memory power testing game. Used functions and arrays to store and evaluate user-clicked patterns and randomly generated patterns to check and move to a new sequence. Simultaneously, these functions handle frontend sounds and blinks using jQuery. Built using HTML, CSS, JS & jQuery.</p>
-
-    <h3>3. BlogPost</h3>
-    <p>Blog website that allows creating, editing, and deleting posts by using middleware, handling HTTP routes, and EJS.</p>
-
-    <h3>4. SecretsAPI</h3>
-    <p>Loads random human secrets from a public API. Uses Axios to fetch secrets. Built using HTML, CSS, JS & DOM.</p>
-
+    <h3>1. TeslaUI</h3>
+    <p>Developed Tesla homepage UI and a dynamic navbar utilizing React hooks, state management, useEffect, and conditional rendering. Technologies: React JS, HTML, CSS, JavaScript.</p>
+    <h3>2. Animeinfo</h3>
+    <p>Created an interactive React application that fetches anime data from a public API, allowing users to input a random number to discover new anime. Technologies: React JS, HTML, CSS, JavaScript.</p>
+    <h3>3. Personal Note</h3>
+    <p>Frontend quick note application built using React JS. Utilized props for communication between components, hooks, and useState to handle state, conditional rendering, and functions. Technologies: React JS, HTML, CSS, JavaScript.</p>
+    <h3>4. SimonGame</h3>
+    <p>Developed a sequence memory game using JavaScript functions and jQuery for handling user interactions, sounds, and visual effects. The game stores and evaluates user-clicked patterns and randomly generated patterns to check and move to a new sequence. Built using HTML, CSS, JavaScript, and jQuery.</p>
     <h3>5. BlogPost-API</h3>
-    <p>The source code includes two servers: one for the API and another for the blog post. The `index.js` file contains a posts array in JSON which handles GET (existing posts), POST (new posts), PATCH (update posts), and DELETE (remove posts) by acquiring input data using middleware and manipulating the JSON array according to the input. `server.js` is used to send and receive responses from the server API to display, add, edit, and delete posts. Requires hosting two servers simultaneously on different ports. Built using Node.js, Express, EJS, and REST-API.</p>
+    <p> Constructed a dual-server system to handle blog posts and API requests with full CRUD functionality
+        requiring multi-port hosting. Technologies: Node.js, Express.js, EJS, REST-API.. Built using Node.js, Express.js, EJS, and REST-API.</p> 
+    <h3>6. Drumkit</h3>
+    <p>JavaScript function with a switch case to play sounds whenever WASDJKL keywords are pressed or clicked. Used the document object model (DOM) to handle frontend effects. Built using HTML, CSS, JS & DOM.</p>
+    <h3>7. SecretsAPI</h3>
+    <p>Loads random human secrets from a public API. Uses Axios to fetch secrets. Built using HTML, CSS, JS & DOM.</p>
+    <h3>8.CapitalQuiz</h3>
+    <p>This project involves creating a database and table using pgAdmin to store countries and their capitals. It captures user input and evaluates whether the provided capital is correct.</p>
+
 </div>
 
 <div class="pers">
     <h3>Educational Qualifications</h3>
 
-<table border="1" cellpadding="8" cellspacing="0">
-  <thead>
+<table class="tba" border="1" cellpadding="8" cellspacing="0">
+  <thead class="vba">
     <tr>
       <th>Year</th>
       <th>Courses</th>
@@ -291,7 +320,7 @@ Mobile: 8428568672
       <th>%/CGPA</th>
     </tr>
   </thead>
-  <tbody>
+  <tbody class="bba">
     <tr>
       <td>2020-2022</td>
       <td>MCA - Masters in Computer Applications</td>
